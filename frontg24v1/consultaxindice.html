@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Libros x Autor</title>
+</head>
+<body>
+    <h2>Consultar Librox x Letra Inicial</h2>
+        <a href="index.html">
+            <img src="images/home.png" alt="Inicio" title="Inicio">
+        </a>
+    <div id="parametros">
+        <label for="lista_letras">Letras:</label>
+        <select name="" id="lista_letras">
+           
+        </select>
+        <button id="consulta">Consultar</button>
+    </div>
+    <hr>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Isbn</th>
+                    <th>Categoría</th>
+                    <th>Título</th>
+                    <th>Author</th>
+                    <th>Páginas</th>
+                    <th>Precio</th>
+                    <th>Año</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                       
+            </tbody>
+        </table>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="js/consultaxindice.js"></script>
+    </div>   
+</body>
+</html>

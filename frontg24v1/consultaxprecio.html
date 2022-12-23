@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultar Libros x Rango de Precios</title>
+</head>
+<body>
+    <h2>Consultar Libros x Rango de Precios</h2>
+        <a href="index.html">
+            <img src="images/home.png" alt="Inicio" title="Inicio">
+        </a>
+    <div id="parametros">
+        <label for="liminf">Valor Inicial:</label>
+        <input type="number" maxlength="8" id="liminf">
+        <label for="limsup">Valor Final:</label>
+        <input type="number" maxlength="8" id="limsup">
+        <button id="consulta">Consultar</button>
+    </div>
+    <hr>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Isbn</th>
+                    <th>Categoría</th>
+                    <th>Título</th>
+                    <th>Author</th>
+                    <th>Páginas</th>
+                    <th>Precio</th>
+                    <th>Año</th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                       
+            </tbody>
+        </table>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="js/consultaxprecio.js"></script>
+    </div>   
+</body>
+</html>
